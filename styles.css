@@ -2,16 +2,20 @@
 
 body {
     background-color: antiquewhite;
-    margin: 50px;
-    padding 50px;
+    margin: 100px;
+    padding 10px;
     border: 10px solid; color:black;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-p{font-family:'Courier New', Courier, monospace
-background-color: brown;}
+p {
+background-color:black;
+text-size-adjust: 50px;
+}
 
 header {
-    background-color: pink;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 img {
@@ -21,21 +25,31 @@ img {
 nav li {
     display: inline-block;
     margin-top: 30px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    color: antiquewhite;
 }
 
-#coffee {
-    width: 100;
-}
 
 footer {
     text-align: center;
+    background-color: saddlebrown;
+    color: white
 }
 
 h1 {
     float: inline-start;
 }
 
-header {
+h2 {
+    text-align: center;
+    background-color: burlywood;
+}
+
+h3 {
     text-align: center;
 }
+
+h4 {
+    text-align: center;
+}
+
