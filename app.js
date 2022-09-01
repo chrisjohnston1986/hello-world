@@ -4,26 +4,48 @@ console.log('Hello World!');
 
 let myName;
 
-myName = 'Chris';
-console.log(myName);
-
-myName = 'Trace';
-console.log(myName);
-
-let usersName = prompt('Who are you?');
-
+let usersName;
 let message;
 
-if (usersName == 'Kassie'){
-  message = ' I  appreciate you for all of your guidance, during 102!'
-} else if (usersName == ''){
-  message = "No Name!";
-} else if (usersName == 'Justin'){
-  message = " Welcome to my 102 website!";
-} else {
-  message = ' Welcome to my 102 website!';
+function getName(){
+  usersName = prompt('Who are you?');
+  document.write('Hi, ' + usersName + '. ');
 }
 
 
-document.write('Hi, ' + usersName);
-document.write("." + "       " + message);
+// let usersName = prompt('Who are you?');
+function makeMessage(){
+  if (usersName == 'Kassie'){
+    message = ' I  appreciate you, for all of your guidance, during 102!'
+  } else if (usersName == ''){
+    message = "No Name!";
+  } else if (usersName == 'Justin'){
+    message = " Welcome to my 102 website!";
+  } else {
+    message = ' Welcome to my 102 website!';
+  }
+  document.write(message);
+}
+
+function showPiggy(){
+  let usersNum = prompt('How many stars would you rate my page? 1-5');
+  
+  for (let i = 0; i < usersNum && i < 5; i++){
+    document.write('<img src="images/pig.png" alt="little pig" class="piggy"/>');
+  }
+}
+
+// let message;
+
+// if (usersName == 'Kassie'){
+//   message = ' I  appreciate you for all of your guidance, during 102!'
+// } else if (usersName == ''){
+//   message = "No Name!";
+// } else if (usersName == 'Justin'){
+//   message = " Welcome to my 102 website!";
+// } else {
+//   message = ' Welcome to my 102 website!';
+// }
+
+
+// document.write('Hi, ' + usersName);
