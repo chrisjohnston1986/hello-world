@@ -6,6 +6,7 @@ let myName;
 
 let usersName;
 let message;
+let ask;
 
 
 function enterQuestion(){
