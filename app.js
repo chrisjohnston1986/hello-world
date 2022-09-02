@@ -7,6 +7,14 @@ let myName;
 let usersName;
 let message;
 
+
+function enterQuestion(){
+  let userAnswer = prompt (usersName + ', Do you want to enter website').toLowerCase();
+      while (userAnswer !== 'yes'){
+          userAnswer = prompt ('WRONG, Do you want to enter?').toLowerCase();
+      };
+}
+
 function getName(){
   usersName = prompt('Who are you?');
   document.write('Hi, ' + usersName + '. ');
